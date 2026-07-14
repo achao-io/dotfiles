@@ -1,1 +1,1 @@
-Currently using WezTerm, Neovim w/ LazyVim, and Tmux. Loving it.
+As of 2026-07-14: I am using [WezTerm](https://wezterm.org/), [Neovim](https://neovim.io/) w/ [LazyVim](https://www.lazyvim.org/), and [tmux](https://github.com/tmux/tmux/wiki).
