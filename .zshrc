@@ -2,13 +2,18 @@
 # Oh My Zsh
 # ----------------------------------------------------------------------------
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="mm/dd/yyyy"
 
 plugins=(git z dotenv kubectl zsh-syntax-highlighting)
 
 source "$ZSH/oh-my-zsh.sh"
+
+# ----------------------------------------------------------------------------
+# Pure ZSH Theme (https://github.com/sindresorhus/pure) 
+# ----------------------------------------------------------------------------
+autoload -U promptinit; promptinit
+prompt pure
 
 # ----------------------------------------------------------------------------
 # PATH
