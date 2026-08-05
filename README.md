@@ -3,18 +3,17 @@ As of 2026-07-14, I use [WezTerm](https://wezterm.org/), [LazyVim](https://www.l
 Organized by topic, one directory per tool — inspired by
 [ryanb/dotfiles](https://github.com/ryanb/dotfiles) and
 [holman/dotfiles](https://github.com/holman/dotfiles). Adding a tmux binding means
-opening `config/tmux/`, not hunting through a kitchen-sink file.
+opening `tmux/`, not hunting through a kitchen-sink file.
 
 ## Layout
 
 ```
-config/
-  claude/     settings.json, CLAUDE.md  -> ~/.claude/
-  git/        gitconfig, gitignore_global
-  nvim/       LazyVim config            -> ~/.config/nvim
-  tmux/       tmux.conf                 -> ~/.config/tmux/tmux.conf
-  wezterm/    wezterm.lua               -> ~/.config/wezterm/wezterm.lua
-  zsh/        zshrc + topic files       -> ~/.zshrc
+claude/     settings.json, CLAUDE.md  -> ~/.claude/
+git/        gitconfig, gitignore_global
+nvim/       LazyVim config            -> ~/.config/nvim
+tmux/       tmux.conf                 -> ~/.config/tmux/tmux.conf
+wezterm/    wezterm.lua               -> ~/.config/wezterm/wezterm.lua
+zsh/        zshrc + topic files       -> ~/.zshrc
 install.sh
 ```
 
@@ -34,7 +33,7 @@ immediately visible to `git status` — no copy step to forget.
 
 Sourced in an explicit order rather than by glob: `path` has to precede `tools`,
 and `aliases` has to follow oh-my-zsh. Set `ZSH_CONFIG` to source them from
-somewhere other than `~/dotfiles/config/zsh`.
+somewhere other than `~/dotfiles/zsh`.
 
 ## Install
 
@@ -52,5 +51,5 @@ tmux and Claude link individual files rather than their directories, since
 
 ## Secrets
 
-Nothing secret belongs in this repo. `config/zsh/work.zsh` sources `~/.secrets` and
+Nothing secret belongs in this repo. `zsh/work.zsh` sources `~/.secrets` and
 `~/.slack_webapp_artifactory` if they exist; keep credentials there.

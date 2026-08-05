@@ -1,5 +1,5 @@
 # Topic files live next to this one. Set ZSH_CONFIG to relocate.
-ZSH_CONFIG="${ZSH_CONFIG:-$HOME/dotfiles/config/zsh}"
+ZSH_CONFIG="${ZSH_CONFIG:-$HOME/dotfiles/zsh}"
 
 # ----------------------------------------------------------------------------
 # Oh My Zsh
