@@ -1,3 +1,17 @@
+## Install
+
+```sh
+git clone https://github.com/achao-io/dotfiles ~/dotfiles
+~/dotfiles/install.sh
+```
+
+Anything already at a destination is moved aside to `*.bak.$$` rather than
+overwritten. Re-running is a no-op for links already pointing at this repo.
+
+tmux and Claude link individual files rather than their directories, since
+`~/.config/tmux/plugins` is [TPM](https://github.com/tmux-plugins/tpm)-managed and
+`~/.claude` holds plugin caches and local state.
+
 ## Layout
 
 ```
@@ -27,22 +41,3 @@ immediately visible to `git status` — no copy step to forget.
 Sourced in an explicit order rather than by glob: `path` has to precede `tools`,
 and `aliases` has to follow oh-my-zsh. Set `ZSH_CONFIG` to source them from
 somewhere other than `~/dotfiles/zsh`.
-
-## Install
-
-```sh
-git clone https://github.com/achao-io/dotfiles ~/dotfiles
-~/dotfiles/install.sh
-```
-
-Anything already at a destination is moved aside to `*.bak.$$` rather than
-overwritten. Re-running is a no-op for links already pointing at this repo.
-
-tmux and Claude link individual files rather than their directories, since
-`~/.config/tmux/plugins` is [TPM](https://github.com/tmux-plugins/tpm)-managed and
-`~/.claude` holds plugin caches and local state.
-
-## Secrets
-
-Nothing secret belongs in this repo. `zsh/work.zsh` sources `~/.secrets` and
-`~/.slack_webapp_artifactory` if they exist; keep credentials there.
