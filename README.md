@@ -1,10 +1,3 @@
-As of 2026-07-14, I use [WezTerm](https://wezterm.org/), [LazyVim](https://www.lazyvim.org/), and [tmux](https://github.com/tmux/tmux/wiki).
-
-Organized by topic, one directory per tool — inspired by
-[ryanb/dotfiles](https://github.com/ryanb/dotfiles) and
-[holman/dotfiles](https://github.com/holman/dotfiles). Adding a tmux binding means
-opening `tmux/`, not hunting through a kitchen-sink file.
-
 ## Layout
 
 ```
