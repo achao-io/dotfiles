@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+  },
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "slack-claude-code-plugins": {
+      "source": {
+        "source": "git",
+        "url": "git@slack-github.com:slack/slack-claude-code-plugins.git"
+      }
+    }
+  },
+  "alwaysThinkingEnabled": true,
+  "skipWorkflowUsageWarning": true,
+  "theme": "light",
+  "editorMode": "vim"
+}

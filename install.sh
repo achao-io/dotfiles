@@ -28,3 +28,8 @@ link config/zsh/zshrc "$HOME/.zshrc"
 link config/wezterm/wezterm.lua "$HOME/.config/wezterm/wezterm.lua"
 # File-level, not the directory: ~/.config/tmux/plugins is TPM-managed.
 link config/tmux/tmux.conf "$HOME/.config/tmux/tmux.conf"
+link config/git/gitconfig "$HOME/.gitconfig"
+link config/git/gitignore_global "$HOME/.gitignore_global"
+# File-level: ~/.claude also holds plugin caches and local state.
+link config/claude/settings.json "$HOME/.claude/settings.json"
+link config/claude/CLAUDE.md "$HOME/.claude/CLAUDE.md"
