@@ -1,16 +1,6 @@
 export PIPX_HOME="$HOME/.local/pipx"
 export PIPX_BIN_DIR="$HOME/.local/bin"
 
-# pyenv init is slow; defer it until first use
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:$PATH"
-pyenv() {
-  unset -f pyenv
-  eval "$(command pyenv init -)"
-  eval "$(command pyenv virtualenv-init -)"
-  pyenv "$@"
-}
-
 # node (fnm replaced nvm)
 command -v fnm >/dev/null && eval "$(fnm env --use-on-cd)"
 
