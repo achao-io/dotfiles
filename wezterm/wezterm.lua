@@ -11,7 +11,7 @@ config.color_scheme = "Catppuccin Mocha"
 config.window_background_opacity = 0.85
 config.macos_window_background_blur = 85
 
-config.font_size = 18
+config.font_size = 16
 config.max_fps = 120
 config.font = wezterm.font("DroidSansMono Nerd Font")
 
