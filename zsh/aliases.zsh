@@ -1,6 +1,3 @@
-alias sbk='slack-beach -r kube-beach'
-alias sbo='slack-beach -r ops'
-alias sc='slack claude'
 alias vim='nvim'
 alias ls='lsd -lah'
 alias path='echo $PATH | tr ":" "\n"'

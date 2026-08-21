@@ -12,12 +12,3 @@ command -v fnm >/dev/null && eval "$(fnm env --use-on-cd)"
 
 # Load SSH keys from macOS keychain (silent)
 /usr/bin/ssh-add --apple-load-keychain >/dev/null 2>&1
-
-# Build flags (Odin / mysql@8.0)
-export LDFLAGS="-L/opt/homebrew/opt/mysql@8.0/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/mysql@8.0/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/mysql@8.0/lib/pkgconfig"
-
-# Fix scipy install error on macOS
-# https://github.com/scipy/scipy/issues/13102#issuecomment-788160041
-export SYSTEM_VERSION_COMPAT=0

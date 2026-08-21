@@ -22,7 +22,7 @@ prompt pure
 # Topic files — ordered, not globbed: path must precede tools that call PATH
 # binaries, and aliases must come after oh-my-zsh.
 # ----------------------------------------------------------------------------
-for topic in path tools work aliases; do
+for topic in path tools aliases; do
   [ -s "$ZSH_CONFIG/$topic.zsh" ] && source "$ZSH_CONFIG/$topic.zsh"
 done
 unset topic
