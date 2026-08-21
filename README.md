@@ -34,8 +34,7 @@ immediately visible to `git status` — no copy step to forget.
 | file | holds |
 | --- | --- |
 | `path.zsh` | homebrew, coreutils, tool-specific `PATH` entries |
-| `tools.zsh` | pyenv, fnm, gvm, envman, ssh-agent, build flags |
-| `work.zsh` | Slack artifactory, kubeconfig, Bedrock |
+| `tools.zsh` | pipx, fnm, gvm, envman, ssh-agent |
 | `aliases.zsh` | shell aliases |
 
 Sourced in an explicit order rather than by glob: `path` has to precede `tools`,
