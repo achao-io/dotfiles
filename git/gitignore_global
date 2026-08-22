@@ -1,4 +1,1 @@
-!js/prebuilt/.storybook/
-!js/static/.buildy/
-
 **/.claude/settings.local.json

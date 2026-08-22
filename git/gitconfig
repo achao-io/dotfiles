@@ -4,7 +4,7 @@
 	prune = true
 [user]
 	name = Anthony Chao
-	email = achao@slack-corp.com
+	email = anthonyrchao@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
 	ignorecase = true
