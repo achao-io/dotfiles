@@ -13,12 +13,12 @@ config.macos_window_background_blur = 85
 
 config.font_size = 16
 config.max_fps = 120
-config.font = wezterm.font("DroidSansMono Nerd Font")
+config.font = wezterm.font("JetBrainsMono Nerd Font")
 
 config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = "RESIZE"
 config.window_frame = {
-	font = wezterm.font("DroidSansMono Nerd Font", { weight = "Bold" }),
+	font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold" }),
 }
 
 -- More scrollback (default is 3500 lines)
