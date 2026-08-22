@@ -34,7 +34,7 @@ immediately visible to `git status` — no copy step to forget.
 | file | holds |
 | --- | --- |
 | `path.zsh` | homebrew, coreutils, tool-specific `PATH` entries |
-| `tools.zsh` | pipx, fnm, gvm, envman, ssh-agent |
+| `tools.zsh` | pipx, go, fzf, ssh-agent |
 | `aliases.zsh` | shell aliases |
 
 Sourced in an explicit order rather than by glob: `path` has to precede `tools`,
