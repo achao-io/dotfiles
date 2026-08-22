@@ -33,10 +33,9 @@ immediately visible to `git status` — no copy step to forget.
 
 | file | holds |
 | --- | --- |
-| `path.zsh` | homebrew, coreutils, tool-specific `PATH` entries |
-| `tools.zsh` | pipx, go, fzf, ssh-agent |
+| `tools.zsh` | `~/.local/bin` PATH, fzf, ssh-agent |
 | `aliases.zsh` | shell aliases |
 
-Sourced in an explicit order rather than by glob: `path` has to precede `tools`,
-and `aliases` has to follow oh-my-zsh. Set `ZSH_CONFIG` to source them from
-somewhere other than `~/dotfiles/zsh`.
+Sourced in an explicit order rather than by glob: `aliases` has to follow
+oh-my-zsh. Set `ZSH_CONFIG` to source them from somewhere other than
+`~/dotfiles/zsh`.
