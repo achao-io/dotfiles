@@ -5,7 +5,7 @@ return {
       picker = {
         sources = {
           projects = {
-            dev = { "~/slack" },
+            dev = { "~/projects" },
           },
         },
       },
